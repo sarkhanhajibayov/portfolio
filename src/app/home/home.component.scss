@@ -1,0 +1,60 @@
+
+.main {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #111;
+  padding-top: 50px;
+}
+.image {
+  background-image: url("https://marketplace.canva.com/EAFNf5vtYfI/2/0/1600w/canva-cream-green-minimalist-zoom-virtual-background-Hb4Wbnm7bb4.jpg");
+  background-position: center;
+  background-size: cover;
+  background-size: cover;
+  width: 200px;
+  height: 200px;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: animate 8s ease-in-out infinite 1s;
+  padding: 20px;
+}
+@keyframes animate {
+  0% {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
+  50% {
+    border-radius: 30% 60% 70% 40%/60% 60% 30% 60%;
+  }
+  100% {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
+}
+img {
+  width: 80%;
+  margin-bottom: 50px;
+  z-index: 9999999999;
+}
+
+.col__img {
+  display: flex;
+  justify-content: center;
+}
+.content {
+  justify-content: center;
+  align-items: center;
+}
+.name {
+  font-family: "Montserrat Bold";
+  font-size: 2.2rem;
+  color: #fff;
+}
+.text {
+  font-family: "Montserrat Italic";
+  font-size: 15px;
+  color: #bbb;
+}
+
