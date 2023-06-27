@@ -1,0 +1,33 @@
+<div class="container-fluid">
+  <div class="row p-4 justify-content-center">
+    <div class="col-md-8 head">
+      <div class="header">Contact</div>
+      <h3 class="touch">Get in touch</h3>
+    </div>
+    <div class="col-md-8 mb-4">
+      <google-map width="100%"></google-map>
+    </div>
+    <div class="col-md-8">
+      <form [formGroup]="mainForm">
+        <mat-form-field class="w-100">
+          <mat-label>Name</mat-label>
+          <input matInput formControlName="fullName" />
+        </mat-form-field>
+        <mat-form-field class="w-100">
+          <mat-label>Mobile</mat-label>
+          <input matInput formControlName="phone" />
+        </mat-form-field>
+        <mat-form-field class="w-100">
+          <mat-label>Email</mat-label>
+          <input matInput formControlName="email" />
+        </mat-form-field>
+
+        <mat-form-field class="w-100">
+          <mat-label>Message</mat-label>
+          <textarea matInput formControlName="message"></textarea>
+        </mat-form-field>
+        <button class="btn">Send Message</button>
+      </form>
+    </div>
+  </div>
+</div>

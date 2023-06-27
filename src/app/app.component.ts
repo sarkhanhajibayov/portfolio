@@ -1,8 +1,12 @@
 import { Component, ElementRef, HostListener, ViewChild } from '@angular/core';
+import { fader } from './route-animations';
+import { from } from 'rxjs';
+import { RouterOutlet } from '@angular/router';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
+  animations: [fader],
 })
 export class AppComponent {
   title = 'portfolio';
@@ -18,10 +22,11 @@ export class AppComponent {
       this.expand = false;
     }, 500);
   }
-
-  @HostListener('document:mousemove', ['$event'])
-  onMousemove(event: MouseEvent) {
-    this.top = event.pageY - 10 + 'px';
-    this.left = event.pageX - 10 + 'px';
+  prepareRoute(outlet: RouterOutlet) {
+    return (
+      outlet &&
+      outlet.activatedRouteData &&
+      outlet.activatedRouteData['animation']
+    );
   }
 }

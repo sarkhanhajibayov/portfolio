@@ -1,0 +1,58 @@
+.container-fluid {
+  background: #111;
+  padding: 50px auto;
+}
+img {
+  width: 100%;
+}
+.image {
+  margin-bottom: 48px;
+}
+.main {
+  margin: 50px 0;
+}
+.about-content {
+  display: flex;
+  justify-content: center;
+}
+.header {
+  font-family: "Montserrat Bold";
+  font-size: 22px;
+  color: #fff;
+  margin-bottom: 26px;
+}
+.text {
+  font-family: "Mulish";
+  font-style: italic;
+  color: #bbb;
+}
+.btn {
+  background: #fff;
+  padding: 10px 20px;
+  border-radius: 0;
+  transition: all 1s ease-in-out;
+  font-family: "Montserrat Bold";
+  font-size: 12px;
+}
+.btn:hover {
+  transform: scale(1.1);
+}
+li {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+.list-header {
+  font-family: "Montserrat Bold";
+  display: inline-block;
+  min-width: 70px !important;
+  color: #fff;
+  font-size: 15px;
+}
+.list-text {
+  font-family: "Mulish";
+  color: #bbb;
+}
+.list {
+  margin-top: 48px;
+}

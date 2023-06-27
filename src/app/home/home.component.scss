@@ -1,26 +1,102 @@
-
-.main {
-  height: 100vh;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+/* Animations */
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(60deg);
+  }
+}
+/* Global */
+/* Space */
+.container-fluid {
   background-color: #111;
-  padding-top: 50px;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: -3;
+}
+.space {
+  position: absolute;
+  height: 1000vh;
+  width: 1000vw;
+  right: 0;
+  top: 0;
+  margin-top: -200vh;
+  margin-left: -200vw;
+  animation: spin 480s linear infinite;
+  background-size: 240px;
+  z-index: -2;
+  /* Had to base64 SVG background for FF compatibility */
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJMYXllcl8yIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDI0MCAyNDAiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDI0MCAyNDAiIHhtbDpzcGFjZT0icHJlc2VydmUiPjxyZWN0IHg9IjEwNiIgeT0iOTAiIGZpbGw9IiNGRkZGRkYiIHdpZHRoPSIyIiBoZWlnaHQ9IjIiLz48cmVjdCB4PSI3NCIgeT0iNjMiIGZpbGw9IiNGRkZGRkYiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiLz48cmVjdCB4PSIyMyIgeT0iNjYiIGZpbGw9IiNGRkZGRkYiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiLz48cmVjdCB4PSI1MCIgeT0iMTEwIiBmaWxsPSIjRkZGRkZGIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIi8+PHJlY3QgeD0iNjMiIHk9IjEyOCIgZmlsbD0iI0ZGRkZGRiIgd2lkdGg9IjEiIGhlaWdodD0iMSIvPjxyZWN0IHg9IjQ1IiB5PSIxNDkiIGZpbGw9IiNGRkZGRkYiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiLz48cmVjdCB4PSI5MiIgeT0iMTUxIiBmaWxsPSIjRkZGRkZGIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIi8+PHJlY3QgeD0iNTgiIHk9IjgiIGZpbGw9IiNGRkZGRkYiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiLz48cmVjdCB4PSIxNDciIHk9IjMzIiBmaWxsPSIjRkZGRkZGIiB3aWR0aD0iMiIgaGVpZ2h0PSIyIi8+PHJlY3QgeD0iOTEiIHk9IjQzIiBmaWxsPSIjRkZGRkZGIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIi8+PHJlY3QgeD0iMTY5IiB5PSIyOSIgZmlsbD0iI0ZGRkZGRiIgd2lkdGg9IjEiIGhlaWdodD0iMSIvPjxyZWN0IHg9IjE4MiIgeT0iMTkiIGZpbGw9IiNGRkZGRkYiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiLz48cmVjdCB4PSIxNjEiIHk9IjU5IiBmaWxsPSIjRkZGRkZGIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIi8+PHJlY3QgeD0iMTM4IiB5PSI5NSIgZmlsbD0iI0ZGRkZGRiIgd2lkdGg9IjEiIGhlaWdodD0iMSIvPjxyZWN0IHg9IjE5OSIgeT0iNzEiIGZpbGw9IiNGRkZGRkYiIHdpZHRoPSIzIiBoZWlnaHQ9IjMiLz48cmVjdCB4PSIyMTMiIHk9IjE1MyIgZmlsbD0iI0ZGRkZGRiIgd2lkdGg9IjIiIGhlaWdodD0iMiIvPjxyZWN0IHg9IjEyOCIgeT0iMTYzIiBmaWxsPSIjRkZGRkZGIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIi8+PHJlY3QgeD0iMjA1IiB5PSIxNzQiIGZpbGw9IiNGRkZGRkYiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiLz48cmVjdCB4PSIxNTIiIHk9IjIwMCIgZmlsbD0iI0ZGRkZGRiIgd2lkdGg9IjEiIGhlaWdodD0iMSIvPjxyZWN0IHg9IjUyIiB5PSIyMTEiIGZpbGw9IiNGRkZGRkYiIHdpZHRoPSIyIiBoZWlnaHQ9IjIiLz48cmVjdCB5PSIxOTEiIGZpbGw9IiNGRkZGRkYiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiLz48cmVjdCB4PSIxMTAiIHk9IjE4NCIgZmlsbD0iI0ZGRkZGRiIgd2lkdGg9IjEiIGhlaWdodD0iMSIvPjwvc3ZnPg==);
 }
 .image {
-  background-image: url("https://marketplace.canva.com/EAFNf5vtYfI/2/0/1600w/canva-cream-green-minimalist-zoom-virtual-background-Hb4Wbnm7bb4.jpg");
-  background-position: center;
-  background-size: cover;
-  background-size: cover;
-  width: 200px;
-  height: 200px;
-  z-index: 1;
   display: flex;
+  width: 400px;
+  height: 400px;
+  animation: animate 8s ease-in-out infinite 1s;
   justify-content: center;
   align-items: center;
-  animation: animate 8s ease-in-out infinite 1s;
-  padding: 20px;
+}
+img {
+  width: 100%;
+}
+.name {
+  font-family: "Montserrat Bold";
+  font-size: 2.5rem;
+  color: #fff;
+}
+.text {
+  font-family: "Montserrat Italic";
+  font-size: 1.2rem;
+  color: #bbb;
+}
+.content {
+  justify-content: center;
+  align-items: center;
+}
+fa-icon {
+  color: #bbb;
+  font-size: 1.5rem;
+  cursor: pointer !important;
+}
+.bord {
+  font-family: "Montserrat";
+  font-size: 1.2rem;
+  color: #bbb;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25px;
+  height: 25px;
+}
+.tech {
+  display: flex;
+}
+.bord {
+  border-right: 1px solid #bbb;
+  padding-right: 50px;
+  margin-right: 50px;
+}
+.logo {
+  margin-right: 15px;
+}
+.html {
+  color: #e65100;
+}
+.css {
+  color: #2299f8;
+}
+.js {
+  color: #f0dc4e;
+}
+.angular {
+  color: #de002d;
 }
 @keyframes animate {
   0% {
@@ -33,28 +109,3 @@
     border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
   }
 }
-img {
-  width: 80%;
-  margin-bottom: 50px;
-  z-index: 9999999999;
-}
-
-.col__img {
-  display: flex;
-  justify-content: center;
-}
-.content {
-  justify-content: center;
-  align-items: center;
-}
-.name {
-  font-family: "Montserrat Bold";
-  font-size: 2.2rem;
-  color: #fff;
-}
-.text {
-  font-family: "Montserrat Italic";
-  font-size: 15px;
-  color: #bbb;
-}
-
