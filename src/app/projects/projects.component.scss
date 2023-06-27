@@ -1,0 +1,67 @@
+.container-fluid {
+  background-color: #111;
+  width: 100%;
+  padding: 50px 0;
+}
+.head {
+  margin-bottom: 62px;
+}
+.header {
+  background-color: hsla(0, 0%, 100%, 0.08);
+  display: inline-block;
+  text-transform: uppercase;
+  padding: 4px 10px;
+  font-size: 12px;
+  color: #999;
+  font-family: "Montserrat Bold";
+  margin-bottom: 15px;
+}
+.touch {
+  font-family: "Montserrat Extra Bold";
+  color: #fff;
+  font-size: 30px;
+}
+.image {
+  background-image: url("/assets/doxmakee.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 300px;
+  cursor: pointer;
+  transition: all 1s ease-in-out;
+  border-radius: 5%;
+}
+.image-1 {
+  background-image: url("/assets/motor.png");
+}
+.image-2 {
+  background-image: url("/assets/sneakers.png");
+}
+.image-3 {
+  background-image: url("/assets/ai.png");
+}
+.image:hover {
+  transform: scale(1.1);
+}
+.project {
+  display: flex;
+}
+.text {
+  font-family: "Montserrat Bold";
+  color: #fff;
+  font-size: 20px;
+  padding-left: 20px;
+  width: 100%;
+  text-align: center;
+}
+.col-md-8 {
+  margin-bottom: 35px !important;
+}
+.desc {
+  font-family: "Mulish";
+  width: 100%;
+  text-align: center;
+  font-size: 15px;
+  color: #bbb;
+}

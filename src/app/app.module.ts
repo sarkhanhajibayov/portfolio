@@ -23,6 +23,11 @@ const appRoute: Routes = [
     component: ContactComponent,
     data: { animation: 'isContact' },
   },
+  {
+    path: 'Projects',
+    component: ProjectsComponent,
+    data: { animation: 'isProjects' },
+  },
 ];
 @NgModule({
   declarations: [
