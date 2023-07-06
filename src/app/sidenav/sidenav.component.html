@@ -1,47 +1,43 @@
 <div class="background">
-<aside class="example-container ">
-  <div class="sidebar">
-    <div class="sidebar__header">
-      <h3>Portfolio</h3>
+  <aside class="example-container">
+    <div class="sidebar">
+      <div class="sidebar__header">
+        <h3 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+          Portfolio
+        </h3>
+      </div>
+      <mat-list-item role="listitem">
+        <li class="px-3 py-1">
+          <a [routerLink]="['/']" routerLinkActive="router-link-active">
+            <i class="far fa-circle fa-xs mr-1"></i>
+            <span>Home</span>
+          </a>
+        </li>
+      </mat-list-item>
+      <mat-list-item role="listitem">
+        <li class="px-3 py-1">
+          <a [routerLink]="['/About']" routerLinkActive="router-link-active">
+            <i class="far fa-circle fa-xs mr-1"></i>
+            <span>About</span>
+          </a>
+        </li>
+      </mat-list-item>
+      <mat-list-item role="listitem">
+        <li class="px-3 py-1">
+          <a [routerLink]="['/Projects']" routerLinkActive="router-link-active">
+            <i class="far fa-circle fa-xs mr-1"></i>
+            <span>Projects</span>
+          </a>
+        </li>
+      </mat-list-item>
+      <mat-list-item role="listitem">
+        <li class="px-3 py-1">
+          <a [routerLink]="['/Contact']" routerLinkActive="router-link-active">
+            <i class="far fa-circle fa-xs mr-1"></i>
+            <span>Contact</span>
+          </a>
+        </li>
+      </mat-list-item>
     </div>
-    <mat-list-item role="listitem">
-      <li class="px-3 py-1">
-        <a [routerLink]="['/']" routerLinkActive="router-link-active">
-          <i class="far fa-circle fa-xs mr-1"></i>
-          <span>Home</span>
-        </a>
-      </li>
-    </mat-list-item>
-    <mat-list-item role="listitem">
-      <li class="px-3 py-1">
-        <a [routerLink]="['/About']" routerLinkActive="router-link-active">
-          <i class="far fa-circle fa-xs mr-1"></i>
-          <span>About</span>
-        </a>
-      </li>
-    </mat-list-item>
-    <mat-list-item role="listitem">
-      <li class="px-3 py-1">
-        <a [routerLink]="['/Projects']" routerLinkActive="router-link-active">
-          <i class="far fa-circle fa-xs mr-1"></i>
-          <span>Projects</span>
-        </a>
-      </li>
-    </mat-list-item>
-    <mat-list-item role="listitem">
-      <li class="px-3 py-1">
-        <a [routerLink]="['/Contact']" routerLinkActive="router-link-active">
-          <i class="far fa-circle fa-xs mr-1"></i>
-          <span>Contact</span>
-        </a>
-      </li>
-    </mat-list-item>
-  </div>
-  <div
-    class="cursor"
-    [style.top]="top"
-    [style.left]="left"
-    [ngClass]="{ expand: expand }"
-  ></div>
-</aside>
+  </aside>
 </div>

@@ -1,4 +1,5 @@
 import { Component, HostListener } from '@angular/core';
+import * as AOS from 'aos';
 
 @Component({
   selector: 'app-sidenav',
@@ -6,19 +7,7 @@ import { Component, HostListener } from '@angular/core';
   styleUrls: ['./sidenav.component.scss'],
 })
 export class SidenavComponent {
-  top: any;
-  left: any;
-  expand = false;
-  @HostListener('document:click', ['$event'])
-  onClick(event: Event) {
-    this.expand = true;
-    setTimeout(() => {
-      this.expand = false;
-    }, 500);
-  }
-  @HostListener('document:mousemove', ['$event'])
-  onMousemove(event: MouseEvent) {
-    this.top = event.pageY - 10 + 'px';
-    this.left = event.pageX - 10 + 'px';
+  ngOnInit(): void {
+    AOS.init();
   }
 }
