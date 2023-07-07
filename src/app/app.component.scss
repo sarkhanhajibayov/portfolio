@@ -17,12 +17,25 @@ app-sidenav {
   background-color: #fff;
   mix-blend-mode: difference;
 }
-
+app-header-mobile{
+  display: none;
+}
 @keyframes cursorAnim {
   from {
     transform: scale(1);
   }
   to {
     transform: scale(0.7);
+  }
+}
+@media screen and (max-width: 1200px) {
+  app-sidenav {
+    display: none;  
+  }
+  app-header-mobile {
+    display: block;  
+  }
+  .route {
+    width: 100%;
   }
 }

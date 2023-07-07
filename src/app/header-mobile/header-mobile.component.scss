@@ -1,0 +1,33 @@
+nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: #000 !important;
+}
+.navbar-collapse{
+    flex-grow: 0;
+}
+.brand, .navbar-nav{
+    margin: auto 50px;
+}
+.navbar{
+    flex-wrap: nowrap;
+}
+.navbar-nav{
+    flex-direction: row;
+    gap: 5px;
+}
+
+.navbar-brand{
+    font-family: "Overpass Extra Bold";
+    font-size: 2em;
+    text-transform: uppercase;
+    color: #fff;
+}
+.nav-link{
+    color: #767676 !important;
+}
+@media screen and (max-width: 500px) {
+    .brand, .navbar-nav{
+        margin: 0;
+    }
+  }

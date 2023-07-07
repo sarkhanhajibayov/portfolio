@@ -7,32 +7,56 @@
         </h3>
       </div>
       <mat-list-item role="listitem">
-        <li class="px-3 py-1">
-          <a [routerLink]="['/']" routerLinkActive="router-link-active">
+        <li
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-delay="400"
+          class="px-3 py-1"
+        >
+          <a
+            routerLink="/"
+            [routerLinkActive]="'active'"
+            [routerLinkActiveOptions]="{ exact: true }"
+          >
             <i class="far fa-circle fa-xs mr-1"></i>
             <span>Home</span>
           </a>
         </li>
       </mat-list-item>
       <mat-list-item role="listitem">
-        <li class="px-3 py-1">
-          <a [routerLink]="['/About']" routerLinkActive="router-link-active">
+        <li
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-delay="500"
+          class="px-3 py-1"
+        >
+          <a routerLink="About" [routerLinkActive]="'active'">
             <i class="far fa-circle fa-xs mr-1"></i>
             <span>About</span>
           </a>
         </li>
       </mat-list-item>
       <mat-list-item role="listitem">
-        <li class="px-3 py-1">
-          <a [routerLink]="['/Projects']" routerLinkActive="router-link-active">
+        <li
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-delay="600"
+          class="px-3 py-1"
+        >
+          <a routerLink="Projects" [routerLinkActive]="'active'">
             <i class="far fa-circle fa-xs mr-1"></i>
             <span>Projects</span>
           </a>
         </li>
       </mat-list-item>
       <mat-list-item role="listitem">
-        <li class="px-3 py-1">
-          <a [routerLink]="['/Contact']" routerLinkActive="router-link-active">
+        <li
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-delay="700"
+          class="px-3 py-1"
+        >
+          <a routerLink="Contact" [routerLinkActive]="'active'">
             <i class="far fa-circle fa-xs mr-1"></i>
             <span>Contact</span>
           </a>

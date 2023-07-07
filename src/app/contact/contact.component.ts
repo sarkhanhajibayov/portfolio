@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { FormBuilder, Validators } from '@angular/forms';
+import * as AOS from 'aos';
 
 @Component({
   selector: 'app-contact',
@@ -19,4 +20,7 @@ export class ContactComponent {
     email: ['', [Validators.required]],
     message: ['', Validators.required],
   });
+  ngOnInit(): void {
+    AOS.init();
+  }
 }

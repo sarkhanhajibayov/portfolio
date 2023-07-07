@@ -14,6 +14,7 @@ import { ContactComponent } from './contact/contact.component';
 import { RouterModule } from '@angular/router';
 import { GoogleMapsModule } from '@angular/google-maps';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HeaderMobileComponent } from './header-mobile/header-mobile.component';
 
 const appRoute: Routes = [
   { path: '', component: HomeComponent, data: { animation: 'isHome' } },
@@ -37,6 +38,7 @@ const appRoute: Routes = [
     AboutComponent,
     ProjectsComponent,
     ContactComponent,
+    HeaderMobileComponent,
   ],
   imports: [
     FormsModule,

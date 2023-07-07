@@ -5,6 +5,7 @@ import { faHtml5 } from '@fortawesome/free-brands-svg-icons';
 import { faCss3Alt } from '@fortawesome/free-brands-svg-icons';
 import { faJs } from '@fortawesome/free-brands-svg-icons';
 import { faAngular } from '@fortawesome/free-brands-svg-icons';
+import * as AOS from 'aos';
 
 @Component({
   selector: 'app-home',
@@ -18,4 +19,7 @@ export class HomeComponent {
   faCss3Alt = faCss3Alt;
   faJs = faJs;
   faAngular = faAngular;
+  ngOnInit(): void {
+    AOS.init();
+  }
 }

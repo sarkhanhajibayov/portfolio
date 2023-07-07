@@ -1,0 +1,25 @@
+<nav class="navbar w-100 navbar-expand-lg navbar-light bg-light">
+  <div class="brand">
+    <a class="navbar-brand" href="#">Portfolio</a>
+  </div>
+  <div>
+    <div class="navbar-nav">
+      <a routerLink="/" class="nav-item nav-link"
+        ><fa-icon
+          [routerLinkActive]="'active'"
+          [routerLinkActiveOptions]="{ exact: true }"
+          [icon]="faHouse"
+        ></fa-icon
+      ></a>
+      <a routerLink="About" class="nav-item nav-link"
+        ><fa-icon [routerLinkActive]="'active'" [icon]="faUser"></fa-icon
+      ></a>
+      <a routerLink="Projects" class="nav-item nav-link" href="#"
+        ><fa-icon routerLinkActive="active" [icon]="faBriefcase"></fa-icon
+      ></a>
+      <a routerLink="Contact" class="nav-item nav-link" href="#"
+        ><fa-icon [routerLinkActive]="'active'" [icon]="faEnvelope"></fa-icon
+      ></a>
+    </div>
+  </div>
+</nav>

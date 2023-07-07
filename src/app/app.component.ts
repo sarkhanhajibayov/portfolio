@@ -1,5 +1,5 @@
 import { Component, ElementRef, HostListener, ViewChild } from '@angular/core';
-import { fader } from './route-animations';
+// import { fader } from './route-animations';
 import { from } from 'rxjs';
 import { RouterOutlet } from '@angular/router';
 import * as AOS from 'aos';
@@ -7,7 +7,7 @@ import * as AOS from 'aos';
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
-  animations: [fader],
+  // animations: [fader],
 })
 export class AppComponent {
   title = 'portfolio';

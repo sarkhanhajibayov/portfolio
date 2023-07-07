@@ -71,12 +71,18 @@ fa-icon {
   font-size: 1.2rem;
   color: #bbb;
 }
+.col__img{
+  display: flex;
+  justify-content: center;
+}
 .logo {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 25px;
   height: 25px;
+  margin-right: 15px;
+
 }
 .tech {
   display: flex;
@@ -86,9 +92,7 @@ fa-icon {
   padding-right: 50px;
   margin-right: 50px;
 }
-.logo {
-  margin-right: 15px;
-}
+
 .html {
   color: #e65100;
 }
@@ -111,4 +115,14 @@ fa-icon {
   100% {
     border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
   }
+}
+@media screen and (max-width: 850px) {
+.col-md-6{
+  max-width: 100%!important;
+}
+.col-sm-12{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 }
