@@ -22,7 +22,7 @@
   font-size: 30px;
 }
 .image {
-  background-image: url("/assets/doxmakee.png");
+  background-image: url("assets/doxmakee.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -33,13 +33,13 @@
   border-radius: 5%;
 }
 .image-1 {
-  background-image: url("/assets/motor.png");
+  background-image: url("assets/motor.png");
 }
 .image-2 {
-  background-image: url("/assets/sneakers.png");
+  background-image: url("assets/sneakers.png");
 }
 .image-3 {
-  background-image: url("/assets/ai.png");
+  background-image: url("assets/ai.png");
 }
 .image:hover {
   transform: scale(1.1);
