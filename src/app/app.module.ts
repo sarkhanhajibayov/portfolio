@@ -50,7 +50,6 @@ const appRoute: Routes = [
     BrowserAnimationsModule,
     FontAwesomeModule,
     GoogleMapsModule,
-
     RouterModule.forRoot(appRoute),
   ],
   providers: [],
