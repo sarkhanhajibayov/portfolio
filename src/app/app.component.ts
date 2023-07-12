@@ -33,4 +33,10 @@ export class AppComponent {
   ngOnInit(): void {
     AOS.init();
   }
+  
+  @HostListener('document:mousemove', ['$event'])
+  onMousemove(event: MouseEvent) {
+    this.top = event.pageY - 10 + 'px';
+    this.left = event.pageX - 10 + 'px';
+  }
 }
