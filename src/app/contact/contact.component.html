@@ -16,8 +16,7 @@
       class="col-md-8 mb-4"
     >
       <google-map width="100%" [center]="center" [zoom]="zoom">
-        <map-marker
-        [position]="marker.position"></map-marker>
+        <map-marker [position]="marker.position"></map-marker>
       </google-map>
     </div>
     <div
@@ -26,25 +25,64 @@
       data-aos-delay="500"
       class="col-md-8"
     >
-      <form [formGroup]="mainForm">
-        <mat-form-field class="w-100">
-          <mat-label>Name</mat-label>
-          <input matInput formControlName="fullName" />
-        </mat-form-field>
-        <mat-form-field class="w-100">
-          <mat-label>Mobile</mat-label>
-          <input matInput formControlName="phone" />
-        </mat-form-field>
-        <mat-form-field class="w-100">
-          <mat-label>Email</mat-label>
-          <input matInput formControlName="email" />
-        </mat-form-field>
+      <form [formGroup]="mainForm" (ngSubmit)="onSubmit()">
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input class="form-control" type="text" formControlName="fullName" />
+          <span
+            class="help-block"
+            *ngIf="
+              !mainForm.get('fullName')?.valid &&
+              mainForm.get('fullName')?.touched
+            "
+            >Name field is required!</span
+          >
+        </div>
+        <div class="form-group">
+          <label for="name">Email:</label>
+          <input class="form-control" type="text" formControlName="email" />
+          <span
+            class="help-block"
+            *ngIf="
+              !mainForm.get('email')?.valid && mainForm.get('email')?.touched
+            "
+            ><span *ngIf="mainForm.get('email')?.errors!['email']"
+              >Enter valid email address!</span
+            >
+            <span *ngIf="mainForm.get('email')?.errors!['required']"
+              >Email field is required!</span
+            ></span
+          >
+        </div>
+        <div class="form-group">
+          <label for="name">Phone:</label>
+          <input class="form-control" type="text" formControlName="phone" />
+          <span
+            class="help-block"
+            *ngIf="
+              !mainForm.get('phone')?.valid && mainForm.get('phone')?.touched
+            "
+            >Phone field is required!</span
+          >
+        </div>
+        <div class="form-group">
+          <label for="name">Message:</label>
+          <textarea
+            class="form-control"
+            type="text"
+            formControlName="message"
+          ></textarea>
+          <span
+            class="help-block"
+            *ngIf="
+              !mainForm.get('message')?.valid &&
+              mainForm.get('message')?.touched
+            "
+            >Message field is required!</span
+          >
+        </div>
 
-        <mat-form-field class="w-100">
-          <mat-label>Message</mat-label>
-          <textarea matInput formControlName="message"></textarea>
-        </mat-form-field>
-        <button class="btn">Send Message</button>
+        <button type="submit" class="btn">Send</button>
       </form>
     </div>
   </div>

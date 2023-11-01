@@ -1,0 +1,10 @@
+<div mat-dialog-content>
+  <h4 class="dialog-title" mat-dialog-title>
+    {{ data.form.fullName }},confirm your data
+  </h4>
+  <fa-icon mat-dialog-close class="dialog-close" [icon]="faXmark"></fa-icon>
+  <p class="dialog-data">Phone: {{ data.form.phone }}</p>
+  <p class="dialog-data">Email: {{ data.form.email }}</p>
+  <p class="dialog-data">Message: {{ data.form.message }}</p>
+  <button class="btn btn-primary w-100">Confirm</button>
+</div>
