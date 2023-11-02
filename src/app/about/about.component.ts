@@ -8,6 +8,6 @@ import * as AOS from 'aos';
 })
 export class AboutComponent {
   ngOnInit(): void {
-    AOS.init();
+    AOS.init({once: true});
   }
 }

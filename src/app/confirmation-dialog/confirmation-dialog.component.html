@@ -6,5 +6,5 @@
   <p class="dialog-data">Phone: {{ data.form.phone }}</p>
   <p class="dialog-data">Email: {{ data.form.email }}</p>
   <p class="dialog-data">Message: {{ data.form.message }}</p>
-  <button class="btn btn-primary w-100">Confirm</button>
+  <button (click)="openSnackbar()" mat-dialog-close class="btn btn-primary w-100">Confirm</button>
 </div>

@@ -29,7 +29,7 @@ export class ContactComponent {
     message: ['', Validators.required],
   });
   ngOnInit(): void {
-    AOS.init();
+    AOS.init({ once: true });
   }
 
   onSubmit() {
