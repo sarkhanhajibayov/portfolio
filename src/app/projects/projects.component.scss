@@ -24,19 +24,20 @@
 }
 
 .mat-mdc-card {
-  background-color: #111;
+  background-color: #1c1c1c;
   border: 0.0625rem solid rgba(255, 255, 255, 0.1);
   border-radius: 0.625rem;
   overflow: hidden !important;
 }
 .card-img {
-  max-height: 300px;
+  height: 300px;
   overflow: hidden !important;
   margin-bottom: 20px;
 }
 img {
   transition: all 300ms ease-in;
   width: 100%;
+  height: 100%;
 }
 .mat-mdc-card:hover img {
   transform: scale(1.1);
@@ -62,4 +63,7 @@ fa-icon {
   color: #bbb;
   font-size: 1.3rem;
   cursor: pointer !important;
+}
+.main-row{
+  row-gap: 20px;
 }

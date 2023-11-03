@@ -5,7 +5,7 @@
       <h3 class="touch">Personal projects</h3>
     </div>
   </div>
-  <div class="row m-0 justify-content-center">
+  <div class="row main-row m-0 justify-content-center">
     <div *ngFor="let p of projects" class="col-md-5">
       <mat-card class="example-card">
         <div class="card-img">
@@ -30,11 +30,11 @@
               <div class="row">
                 <a
                   class="mx-2"
-                  href="https://github.com/mizanacademy/document-converter-site"
+                  [href]="p.gitUrl"
                   target="_blank"
                   ><fa-icon class="cursor" [icon]="faGithub"></fa-icon
                 ></a>
-                <a href="https://doxmake.com/home" target="_blank"
+                <a [href]="p.siteUrl" target="_blank"
                   ><fa-icon
                     class="cursor"
                     [icon]="faArrowUpRightFromSquare"

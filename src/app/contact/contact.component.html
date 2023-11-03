@@ -46,10 +46,10 @@
             *ngIf="
               !mainForm.get('email')?.valid && mainForm.get('email')?.touched
             "
-            ><span *ngIf="mainForm.get('email')?.errors!['email']"
+            ><span *ngIf="(mainForm.get('email')?.errors)!['email']"
               >Enter valid email address!</span
             >
-            <span *ngIf="mainForm.get('email')?.errors!['required']"
+            <span *ngIf="(mainForm.get('email')?.errors)!['required']"
               >Email field is required!</span
             ></span
           >
@@ -82,7 +82,9 @@
           >
         </div>
 
-        <button type="submit" class="btn">Send</button>
+        <button [disabled]="!mainForm.valid" type="submit" class="btn">
+          Send
+        </button>
       </form>
     </div>
   </div>

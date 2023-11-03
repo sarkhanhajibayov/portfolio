@@ -14,11 +14,25 @@ export class ProjectsService {
       'https://github.com/mizanacademy/document-converter-site'
     ),
     new Project(
-      'DocxMake',
-      'assets/image.png',
-      ['HTML', 'CSS', 'TypeScript', 'Angular', 'Firebase'],
-      'https://doxmake.com/home',
-      'https://github.com/mizanacademy/document-converter-site'
+      'BillKill',
+      'assets/billkill.png',
+      ['HTML', 'CSS', 'TypeScript', 'Angular', '.NET Core'],
+      'https://billkill.az/home',
+      'https://github.com/devx-az/billkill-subscriber-frontend'
+    ),
+    new Project(
+      'MB-Securities',
+      'assets/MB-Securities.png',
+      ['HTML', 'CSS', 'TypeScript', 'Angular', '.NET Core'],
+      '',
+      ''
+    ),
+    new Project(
+      'Sneakers Store',
+      'assets/sneakers.png',
+      ['HTML', 'CSS', 'TypeScript', 'Angular', '.NET Core'],
+      '',
+      ''
     ),
   ];
   constructor() {}
