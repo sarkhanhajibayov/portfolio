@@ -20,6 +20,5 @@ export class HomeComponent {
   faJs = faJs;
   faAngular = faAngular;
   ngOnInit(): void {
-    AOS.init();
-  }
+    AOS.init({ once: true });  }
 }

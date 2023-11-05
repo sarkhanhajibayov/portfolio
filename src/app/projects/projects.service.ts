@@ -15,7 +15,7 @@ export class ProjectsService {
     ),
     new Project(
       'BillKill',
-      'assets/billkill.png',
+      'assets/billkill1.png',
       ['HTML', 'CSS', 'TypeScript', 'Angular', '.NET Core'],
       'https://billkill.az/home',
       'https://github.com/devx-az/billkill-subscriber-frontend'
@@ -33,6 +33,13 @@ export class ProjectsService {
       ['HTML', 'CSS', 'TypeScript', 'Angular', '.NET Core'],
       '',
       ''
+    ),
+    new Project(
+      'Moto Sale',
+      'assets/motosale.png',
+      ['HTML', 'CSS', 'TypeScript', 'Angular', '.NET Core'],
+      'https://github.com/Hajibayov/Moto-Sale',
+      'https://hajibayov.github.io/Moto-Sale/Home'
     ),
   ];
   constructor() {}

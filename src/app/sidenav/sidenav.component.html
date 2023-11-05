@@ -13,13 +13,8 @@
           data-aos-delay="400"
           class="px-3 py-1"
         >
-          <a
-            routerLink="/"
-            [routerLinkActive]="'active'"
-            [routerLinkActiveOptions]="{ exact: true }"
-          >
-            <i class="far fa-circle fa-xs mr-1"></i>
-            <span>Home</span>
+          <a routerLink="/">
+            <fa-icon class="mr-3" [icon]="faHouse"></fa-icon> <span>Home</span>
           </a>
         </li>
       </mat-list-item>
@@ -31,7 +26,7 @@
           class="px-3 py-1"
         >
           <a routerLink="About" [routerLinkActive]="'active'">
-            <i class="far fa-circle fa-xs mr-1"></i>
+            <fa-icon class="mr-3" [icon]="faUser"></fa-icon>
             <span>About</span>
           </a>
         </li>
@@ -44,7 +39,7 @@
           class="px-3 py-1"
         >
           <a routerLink="Projects" [routerLinkActive]="'active'">
-            <i class="far fa-circle fa-xs mr-1"></i>
+            <fa-icon class="mr-3" [icon]="faBriefcase"></fa-icon>
             <span>Projects</span>
           </a>
         </li>
@@ -57,7 +52,7 @@
           class="px-3 py-1"
         >
           <a routerLink="Contact" [routerLinkActive]="'active'">
-            <i class="far fa-circle fa-xs mr-1"></i>
+            <fa-icon class="mr-3" [icon]="faEnvelope"></fa-icon>
             <span>Contact</span>
           </a>
         </li>

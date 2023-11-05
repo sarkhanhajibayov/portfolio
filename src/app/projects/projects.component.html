@@ -1,11 +1,21 @@
 <div class="container-fluid">
   <div class="row m-0 p-4 justify-content-center">
-    <div class="col-md-10 head">
+    <div
+      data-aos="fade-left"
+      data-aos-duration="1000"
+      data-aos-delay="300"
+      class="col-md-10 head"
+    >
       <div class="header">Projects</div>
       <h3 class="touch">Personal projects</h3>
     </div>
   </div>
-  <div class="row main-row m-0 justify-content-center">
+  <div
+    data-aos="fade-up"
+    data-aos-duration="1000"
+    data-aos-delay="500"
+    class="row main-row m-0 justify-content-center"
+  >
     <div *ngFor="let p of projects" class="col-md-5">
       <mat-card class="example-card">
         <div class="card-img">
@@ -29,12 +39,13 @@
               <h3 class="project-title m-0 p-0">{{ p.name }}</h3>
               <div class="row">
                 <a
+                  *ngIf="p.gitUrl"
                   class="mx-2"
                   [href]="p.gitUrl"
                   target="_blank"
                   ><fa-icon class="cursor" [icon]="faGithub"></fa-icon
                 ></a>
-                <a [href]="p.siteUrl" target="_blank"
+                <a *ngIf="p.siteUrl" [href]="p.siteUrl" target="_blank"
                   ><fa-icon
                     class="cursor"
                     [icon]="faArrowUpRightFromSquare"
