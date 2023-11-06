@@ -37,6 +37,7 @@ export class ContactComponent {
     this.dialog.open(ConfirmationDialogComponent, {
       data: {
         form: this.mainForm.value,
+        autoFocus: true,
       },
     });
   }

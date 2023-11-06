@@ -18,6 +18,9 @@ import { HeaderMobileComponent } from './header-mobile/header-mobile.component';
 import { ConfirmationDialogComponent } from './confirmation-dialog/confirmation-dialog.component';
 import { SnackbarComponent } from './snackbar/snackbar.component';
 import { ReadMoreDialogComponent } from './read-more-dialog/read-more-dialog.component';
+import { CarouselModule } from 'primeng/carousel';
+import { TagModule } from 'primeng/tag';
+import { ButtonModule } from 'primeng/button';
 
 const appRoute: Routes = [
   { path: '', component: HomeComponent, data: { animation: 'isHome' } },
@@ -57,6 +60,9 @@ const appRoute: Routes = [
     FontAwesomeModule,
     GoogleMapsModule,
     RouterModule.forRoot(appRoute),
+    CarouselModule,
+    TagModule,
+    ButtonModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

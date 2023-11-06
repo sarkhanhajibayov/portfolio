@@ -3,6 +3,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+body {
+  overflow-x: hidden;
+}
 .main {
   position: relative;
 }
@@ -61,4 +64,13 @@ mat-list-item:hover .cursor {
 .mat-mdc-dialog-container .mdc-dialog__surface {
   border-radius: 10px !important;
   background-color: #000 !important;
+}
+.mdc-dialog .mdc-dialog__content {
+  padding: 70px !important;
+}
+.mat-mdc-progress-bar .mdc-linear-progress__buffer-bar {
+  background-color: #222;
+}
+.mdc-linear-progress__bar-inner {
+  border-color: #e8e8e8 !important;
 }

@@ -1,45 +1,54 @@
 <div mat-dialog-content>
-  <div class="row">
-    <div class="col-md-6">
-      <mat-list role="list">
-        <span matListItemTitle class="list-title" style="padding: 10px 16px"
-          >Language Skills</span
-        >
-
-        <mat-list-item class="w-100" role="listitem">
-          <div style="padding: 10px 16px" class="row justify-content-between">
-            <span>English</span>
-            <span>90%</span>
-          </div>
-          <mat-progress-bar
-            class="mb-2"
-            mode="determinate"
-            value="90"
-          ></mat-progress-bar
-        ></mat-list-item>
-        <mat-list-item class="w-100" role="listitem">
-          <div style="padding: 10px 16px" class="row justify-content-between">
-            <span>Russian</span>
-            <span>90%</span>
-          </div>
-          <mat-progress-bar
-            class="mb-2"
-            mode="determinate"
-            value="90"
-          ></mat-progress-bar
-        ></mat-list-item>
-        <mat-list-item class="w-100" role="listitem">
-          <div style="padding: 10px 16px" class="row justify-content-between">
-            <span>Turkish</span>
-            <span>90%</span>
-          </div>
-          <mat-progress-bar
-            class="mb-2"
-            mode="determinate"
-            value="90"
-          ></mat-progress-bar
-        ></mat-list-item>
-      </mat-list>
+  <fa-icon mat-dialog-close class="dialog-close" [icon]="faXmark"></fa-icon>
+  <div class="row skills">
+    <div class="col-md-6 progress-list">
+      <h3 class="progress-list-header">Language Skills</h3>
+      <div *ngFor="let skill of skills" class="progress-list-item my-4">
+        <div class="row progress-label justify-content-between">
+          <span>{{ skill.name }}</span>
+          <span>{{ skill.percent }}</span>
+        </div>
+        <mat-progress-bar
+          mode="determinate"
+          [value]="skill.value"
+        ></mat-progress-bar>
+      </div>
+    </div>
+    <div class="col-md-6 progress-list">
+      <h3 class="progress-list-header">Soft Skills</h3>
+      <div *ngFor="let skill of softSkills" class="progress-list-item my-4">
+        <div class="row progress-label justify-content-between">
+          <span>{{ skill.name }}</span>
+          <span>{{ skill.percent }}</span>
+        </div>
+        <mat-progress-bar
+          mode="determinate"
+          [value]="skill.value"
+        ></mat-progress-bar>
+      </div>
     </div>
   </div>
+  <div>
+  <h3 class="progress-list-header my-4">Programming Skills</h3>
+  <p-carousel
+    [autoplayInterval]="3000"
+    [circular]="true"
+    [value]="images"
+    [numVisible]="3"
+    [numScroll]="1"
+    [showIndicators]="false"
+    [showNavigators]="false"
+  >
+     
+    <ng-template let-image pTemplate="item">
+      <div class="d-flex justify-content-center">
+        <div class="carousel-card d-flex justify-content-center">
+             
+          <img [src]="image.source" [alt]="image.alt" class="image-card" />  
+
+        </div>
+      </div>
+    </ng-template>
+  </p-carousel>
+</div>
 </div>

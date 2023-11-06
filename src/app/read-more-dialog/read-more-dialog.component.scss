@@ -1,3 +1,39 @@
-span {
+.progress-list-header {
+  font-size: 20px;
+  color: #fff;
+}
+.progress-label {
+  padding: 10px 16px 10px 16px;
+}
+.progress-label span {
+  color: #fff;
+  font-style: italic;
+  display: inline-block;
+}
+.dialog-close {
+  color: #fff;
+  position: absolute;
+  top: 3%;
+  right: 2%;
+  cursor: pointer;
+}
+img {
+  width: 90%;
+  filter: grayscale(90%);
+  transition: all 0.3s ease;
+}
+
+.carousel-card {
+  width: 185px;
+  height: 90px;
+  background-color: #1c1c1c;
+  border: 0.0625rem solid rgba(255, 255, 255, 0.1);
+  border-radius: 0.625rem;
+  padding: 10px 0;
+}
+.carousel-card:hover img {
+  filter: none !important;
+}
+.image-label {
   color: #fff;
 }

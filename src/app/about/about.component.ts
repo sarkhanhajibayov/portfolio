@@ -17,6 +17,8 @@ export class AboutComponent {
   onReadMore() {
     this.dialog.open(ReadMoreDialogComponent, {
       width: '900px',
+      autoFocus: true,
+
     });
   }
 }
