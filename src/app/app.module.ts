@@ -21,6 +21,7 @@ import { ReadMoreDialogComponent } from './read-more-dialog/read-more-dialog.com
 import { CarouselModule } from 'primeng/carousel';
 import { TagModule } from 'primeng/tag';
 import { ButtonModule } from 'primeng/button';
+import { HttpClientModule } from '@angular/common/http';
 
 const appRoute: Routes = [
   { path: '', component: HomeComponent, data: { animation: 'isHome' } },
@@ -63,6 +64,7 @@ const appRoute: Routes = [
     CarouselModule,
     TagModule,
     ButtonModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

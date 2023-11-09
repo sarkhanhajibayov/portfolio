@@ -1,3 +1,5 @@
+@import "./assets/fonts/fonts.scss";
+
 * {
   margin: 0;
   padding: 0;
@@ -5,46 +7,49 @@
 }
 body {
   overflow-x: hidden;
+  font-family: "Montserrat";
+  font-weight: normal;
 }
+
 .main {
   position: relative;
 }
-@font-face {
-  font-family: "Overpass";
-  src: url(assets/Overpass-Regular.ttf);
-}
-@font-face {
-  font-family: "Overpass Bold";
-  src: url(assets/Overpass-Bold.ttf);
-}
-@font-face {
-  font-family: "Overpass Extra Bold";
-  src: url(assets/Overpass-ExtraBold.ttf);
-}
-@font-face {
-  font-family: "Montserrat";
-  src: url(assets/Montserrat-Regular.ttf);
-}
-@font-face {
-  font-family: "Montserrat Italic";
-  src: url(assets/Montserrat-Italic.ttf);
-}
-@font-face {
-  font-family: "Montserrat Medium";
-  src: url(assets/Montserrat-Medium.ttf);
-}
-@font-face {
-  font-family: "Mulish";
-  src: url(assets/Mulish-Regular.ttf);
-}
-@font-face {
-  font-family: "Montserrat Bold";
-  src: url(assets/Montserrat-Bold.ttf);
-}
-@font-face {
-  font-family: "Montserrat Extra Bold";
-  src: url(assets/Montserrat-ExtraBold.ttf);
-}
+// @font-face {
+//   font-family: "Overpass";
+//   src: url(assets/Overpass-Regular.ttf);
+// }
+// @font-face {
+//   font-family: "Overpass Bold";
+//   src: url(assets/Overpass-Bold.ttf);
+// }
+// @font-face {
+//   font-family: "Overpass Extra Bold";
+//   src: url(assets/Overpass-ExtraBold.ttf);
+// }
+// @font-face {
+//   font-family: "Montserrat";
+//   src: url(assets/Montserrat-Regular.ttf);
+// }
+// @font-face {
+//   font-family: "Montserrat Italic";
+//   src: url(assets/Montserrat-Italic.ttf);
+// }
+// @font-face {
+//   font-family: "Montserrat Medium";
+//   src: url(assets/Montserrat-Medium.ttf);
+// }
+// @font-face {
+//   font-family: "Mulish";
+//   src: url(assets/Mulish-Regular.ttf);
+// }
+// @font-face {
+//   font-family: "Montserrat Bold";
+//   src: url(assets/Montserrat-Bold.ttf);
+// }
+// @font-face {
+//   font-family: "Montserrat Extra Bold";
+//   src: url(assets/Montserrat-ExtraBold.ttf);
+// }
 mat-list-item:hover .cursor {
   transform: scale(1.2) !important;
 }

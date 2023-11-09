@@ -8,9 +8,8 @@ describe('ReadMoreDialogComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ ReadMoreDialogComponent ]
-    })
-    .compileComponents();
+      declarations: [ReadMoreDialogComponent],
+    }).compileComponents();
 
     fixture = TestBed.createComponent(ReadMoreDialogComponent);
     component = fixture.componentInstance;
