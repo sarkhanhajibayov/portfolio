@@ -7,16 +7,16 @@ import { faXmark } from '@fortawesome/free-solid-svg-icons';
 })
 export class ReadMoreDialogComponent {
   images = [
-        { source: '/assets/html5.svg', alt: 'HTML5' },
-        { source:  '/assets/css3.svg', alt: 'CSS3' },
-        { source: '/assets/javascript.svg', alt: 'JavaScript' },
-        { source: '/assets/bootstrap.svg', alt: 'Bootstrap' },
-        { source: '/assets/angular.svg', alt: 'Angular' },
-        { source: '/assets/c-sharp-logo.svg', alt: 'C#' },
-        { source: '/assets/dotnet.svg', alt: '.Net Core' },
-        { source: '/assets/mySQL-server.svg', alt: 'MS SQL' },
-        { source: '/assets/postgresql-logo.svg', alt: 'PostgreSQL' },
-        { source: '/assets/postman-logo.svg', alt: 'Postman' },
+        { source: '/assets/images/html5-logo.svg', alt: 'HTML5' },
+        { source:  '/assets/images/css3-logo.svg', alt: 'CSS3' },
+        { source: '/assets/images/javascript-logo.svg', alt: 'JavaScript' },
+        { source: '/assets/images/bootstrap-logo.svg', alt: 'Bootstrap' },
+        { source: '/assets/images/angular-logo.svg', alt: 'Angular' },
+        { source: '/assets/images/c-sharp-logo.svg', alt: 'C#' },
+        { source: '/assets/images/dotnet-logo.svg', alt: '.Net Core' },
+        { source: '/assets/images/mySQL-server.svg', alt: 'MS SQL' },
+        { source: '/assets/images/postgresql-logo.svg', alt: 'PostgreSQL' },
+        { source: '/assets/images/postman-logo.svg', alt: 'Postman' },
 
       ];
   skills = [

@@ -8,35 +8,35 @@ export class ProjectsService {
   projects: Project[] = [
     new Project(
       'DoxMake',
-      'assets/image.png',
+      'assets/images/doxmake.png',
       ['HTML', 'CSS', 'TypeScript', 'Angular', 'Firebase'],
       'https://doxmake.com/home',
       'https://github.com/mizanacademy/document-converter-site'
     ),
     new Project(
       'BillKill',
-      'assets/billkill1.png',
+      'assets/images/billkill.png',
       ['HTML', 'CSS', 'TypeScript', 'Angular', '.NET Core'],
       'https://billkill.az/home',
       'https://github.com/devx-az/billkill-subscriber-frontend'
     ),
     new Project(
       'MB-Securities',
-      'assets/MB-Securities.png',
+      'assets/images/securities.png',
       ['HTML', 'CSS', 'TypeScript', 'Angular', '.NET Core'],
       '',
       ''
     ),
     new Project(
       'Sneakers Store',
-      'assets/sneakers.png',
+      'assets/images/sneakers.png',
       ['HTML', 'CSS', 'TypeScript', 'Angular', '.NET Core'],
       '',
       ''
     ),
     new Project(
       'Moto Sale',
-      'assets/motosale.png',
+      'assets/images/motosale.png',
       ['HTML', 'CSS', 'TypeScript', 'Angular', '.NET Core'],
       'https://github.com/Hajibayov/Moto-Sale',
       'https://hajibayov.github.io/Moto-Sale/Home'

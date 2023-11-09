@@ -1,0 +1,6 @@
+{
+    "/api": {
+      "target": "https://portfolio-fe27f-default-rtdb.firebaseio.com/about",
+      "secure": false
+    }
+  }

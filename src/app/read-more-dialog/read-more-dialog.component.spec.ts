@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ReadMoreDialogComponent } from './read-more-dialog.component';
+import { ReadMoreDialogComponent } from '../../assets/images/read-more-dialog.component';
 
 describe('ReadMoreDialogComponent', () => {
   let component: ReadMoreDialogComponent;
@@ -8,9 +8,8 @@ describe('ReadMoreDialogComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ ReadMoreDialogComponent ]
-    })
-    .compileComponents();
+      declarations: [ReadMoreDialogComponent],
+    }).compileComponents();
 
     fixture = TestBed.createComponent(ReadMoreDialogComponent);
     component = fixture.componentInstance;
