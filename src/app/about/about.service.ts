@@ -8,6 +8,9 @@ import { Observable, map } from 'rxjs';
 export class AboutService {
   headers = new HttpHeaders({
     'Access-Control-Allow-Origin': '*',
+    'Access-Control-Allow-Methods': 'DELETE, POST, GET, OPTIONS',
+    'Access-Control-Allow-Headers':
+      'Content-Type, Authorization, X-Requested-With',
   });
   myAppUrl: any;
   constructor(private http: HttpClient) {}

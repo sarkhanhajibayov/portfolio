@@ -13,7 +13,7 @@
       data-aos="fade-up"
       data-aos-duration="1000"
       data-aos-delay="400"
-      class="col-md-10 mb-4"
+      class="col-md-5"
     >
       <google-map width="100%" [center]="center" [zoom]="zoom">
         <map-marker [position]="marker.position"></map-marker>
@@ -23,8 +23,11 @@
       data-aos="fade-up"
       data-aos-duration="1000"
       data-aos-delay="500"
-      class="col-md-10"
+      class="col-md-5 d-flex flex-column justify-content-between"
     >
+      <div class="form-header">
+        <h3>Send me message!</h3>
+      </div>
       <form [formGroup]="mainForm" (ngSubmit)="onSubmit()">
         <div class="form-group">
           <label for="name">Name:</label>

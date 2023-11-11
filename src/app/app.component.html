@@ -1,10 +1,9 @@
-<div class="container-fluid w-100 p-0 container-body main">
-  <div class="row m-0">
+<div class="row p-0 m-0">
+  <div class="side">
     <app-sidenav></app-sidenav>
-    <app-header-mobile class="w-100"></app-header-mobile>
-    <div class="route">
-      <router-outlet #outlet="outlet"> </router-outlet>
-    </div>
+    <app-header-mobile></app-header-mobile>
   </div>
-
+  <div class="main">
+    <router-outlet></router-outlet>
+  </div>
 </div>

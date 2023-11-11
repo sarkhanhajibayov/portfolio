@@ -1,7 +1,10 @@
-app-sidenav {
+.row {
+  height: 100%;
+}
+.side {
   width: 21%;
 }
-.route {
+.main {
   width: 79%;
 }
 .cursor {
@@ -17,7 +20,7 @@ app-sidenav {
   background-color: #fff;
   mix-blend-mode: difference;
 }
-app-header-mobile{
+app-header-mobile {
   display: none;
 }
 @keyframes cursorAnim {
@@ -30,12 +33,15 @@ app-header-mobile{
 }
 @media screen and (max-width: 1200px) {
   app-sidenav {
-    display: none;  
+    display: none;
   }
   app-header-mobile {
-    display: block;  
+    display: block;
   }
-  .route {
+  .main {
+    width: 100%;
+  }
+  .side {
     width: 100%;
   }
 }
