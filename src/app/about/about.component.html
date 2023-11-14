@@ -14,20 +14,15 @@
       />
     </div>
     <div
+      *ngIf="about"
       data-aos="fade-left"
       data-aos-duration="1000"
       data-aos-delay="400"
-      class="about-content w-100"
+      class="row about-content w-100"
     >
       <div class="col-md-5 col-12 about">
-        <h3 class="header">Sarkhan Hajibayov</h3>
-        <p class="text">
-          Hello! I'm Sarkhan Hajibayov, a passionate and dedicated junior web
-          developer with expertise in HTML, CSS, JavaScript, Angular, C#, and
-          SQL. I am deeply fascinated by the world of web development and love
-          creating engaging and dynamic web applications that provide
-          exceptional user experiences.
-        </p>
+        <h3 class="header">{{ about.fullName }}</h3>
+        <p class="text">{{ about.description }}</p>
         <button type="button" (click)="onReadMore()" class="btn">
           Read More
         </button>
@@ -36,37 +31,31 @@
         <mat-list-item role="listitem">
           <li class="px-3 py-1 list-style-none">
             <span class="list-header">Birthday:</span>
-            <span class="list-text pl-3">14.10.2000</span>
+            <span class="list-text pl-3">{{ about.birthDate }}</span>
           </li>
         </mat-list-item>
         <mat-list-item role="listitem">
           <li class="px-3 py-1">
             <span class="list-header">Age:</span>
-            <span class="list-text pl-3">22</span>
+            <span class="list-text pl-3">{{ age }}</span>
           </li>
         </mat-list-item>
         <mat-list-item role="listitem">
           <li class="px-3 py-1">
             <span class="list-header">Address:</span>
-            <span class="list-text pl-3">Baku,Azerbaijan</span>
+            <span class="list-text pl-3">{{ about.address }}</span>
           </li>
         </mat-list-item>
         <mat-list-item role="listitem">
           <li class="px-3 py-1">
             <span class="list-header">Email:</span>
-            <span class="list-text pl-3">shacibyov@gmail.com</span>
+            <span class="list-text pl-3">{{ about.email }}</span>
           </li>
         </mat-list-item>
         <mat-list-item role="listitem">
           <li class="px-3 py-1">
             <span class="list-header">Phone:</span>
-            <span class="list-text pl-3">+994 55 352 25 96</span>
-          </li>
-        </mat-list-item>
-        <mat-list-item role="listitem">
-          <li class="px-3 py-1">
-            <span class="list-header">Study:</span>
-            <span class="list-text pl-3">ASOIU</span>
+            <span class="list-text pl-3">{{ about.phone }}</span>
           </li>
         </mat-list-item>
       </div>

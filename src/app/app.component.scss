@@ -1,10 +1,10 @@
-.row {
+.container-fluid {
   height: 100%;
 }
-.side {
+app-sidenav {
   width: 21%;
 }
-.main {
+.route {
   width: 79%;
 }
 .cursor {
@@ -38,10 +38,7 @@ app-header-mobile {
   app-header-mobile {
     display: block;
   }
-  .main {
-    width: 100%;
-  }
-  .side {
+  .route {
     width: 100%;
   }
 }

@@ -1,13 +1,18 @@
 @import "./assets/fonts/fonts.scss";
-html,
-body {
-  height: 100%;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-
 body {
   overflow-x: hidden;
   font-family: "Montserrat";
   font-weight: normal;
+  height: 100%;
+}
+
+.main {
+  position: relative;
 }
 // @font-face {
 //   font-family: "Overpass";

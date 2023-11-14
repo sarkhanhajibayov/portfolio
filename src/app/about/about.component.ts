@@ -3,6 +3,8 @@ import { MatDialog } from '@angular/material/dialog';
 import * as AOS from 'aos';
 import { ReadMoreDialogComponent } from '../read-more-dialog/read-more-dialog.component';
 import { AboutService } from './about.service';
+import { About } from './about.model';
+import { ConfirmationDialogComponent } from '../confirmation-dialog/confirmation-dialog.component';
 
 @Component({
   selector: 'app-about',
@@ -10,7 +12,13 @@ import { AboutService } from './about.service';
   styleUrls: ['./about.component.scss'],
 })
 export class AboutComponent {
-  about = [];
+  about!: About;
+  birthDate: any;
+  age: any;
+  day: any;
+  month: any;
+  year: any;
+
   constructor(private dialog: MatDialog, private aboutService: AboutService) {}
 
   ngOnInit(): void {
@@ -21,15 +29,19 @@ export class AboutComponent {
   onReadMore() {
     this.dialog.open(ReadMoreDialogComponent, {
       width: '900px',
-      autoFocus: true,
     });
   }
 
   getAbout() {
     this.aboutService.getAbout().subscribe((res) => {
-      console.log(res);
-      this.about = res;
-      console.log(this.about);
+      if (res) {
+        this.about = res;
+        this.birthDate = res.birthDate;
+        [this.day, this.month, this.year] = this.birthDate!.split('.');
+        const birthDate = new Date(this.year, this.month - 1, this.day);
+        const currentDate = new Date();
+        this.age = currentDate.getFullYear() - birthDate.getFullYear();
+      }
     });
   }
 }
