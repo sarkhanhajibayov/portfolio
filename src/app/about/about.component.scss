@@ -1,13 +1,14 @@
+.wrapper {
+  height: 100%;
+}
 .container-fluid {
-  background-color: #111;
   width: 100%;
-  padding: 50px 0 150px 0;
+  padding: 50px 0;
 }
 
 .about-content {
   display: flex;
   justify-content: center;
-  
 }
 .header {
   font-weight: bold;

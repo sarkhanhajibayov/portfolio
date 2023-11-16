@@ -19,6 +19,7 @@
   justify-content: center;
   z-index: 0;
   overflow: hidden;
+  padding: 50px 0;
 }
 .space {
   overflow: hidden !important;
@@ -116,12 +117,18 @@ fa-icon {
   }
 }
 @media screen and (max-width: 850px) {
-  .col-md-6 {
-    max-width: 100% !important;
+  .image{
+    width: 350px;
+    height: 350px;
   }
-  .col-sm-12 {
-    display: flex;
+  .container-fluid {
+    height: 100%;
+    padding: 50px;
+  }
+  .home-text {
+    text-align: center;
+  }
+  .tech {
     justify-content: center;
-    align-items: center;
   }
 }

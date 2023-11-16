@@ -4,16 +4,16 @@
   padding: 0;
   box-sizing: border-box;
 }
+html,
+body {
+  height: 100%;
+}
 body {
   overflow-x: hidden;
   font-family: "Montserrat";
   font-weight: normal;
-  height: 100%;
 }
 
-.main {
-  position: relative;
-}
 // @font-face {
 //   font-family: "Overpass";
 //   src: url(assets/Overpass-Regular.ttf);
@@ -78,4 +78,8 @@ mat-list-item:hover .cursor {
 }
 .mdc-linear-progress__bar-inner {
   border-color: #e8e8e8 !important;
+}
+
+.wrapper {
+  overflow-x: hidden;
 }

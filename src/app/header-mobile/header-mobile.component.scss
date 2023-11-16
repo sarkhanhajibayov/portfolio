@@ -8,7 +8,7 @@ nav {
 }
 .brand,
 .navbar-nav {
-  margin: auto 50px;
+  display: flex;
 }
 .navbar {
   flex-wrap: nowrap;
@@ -16,6 +16,7 @@ nav {
 .navbar-nav {
   flex-direction: row;
   gap: 5px;
+  column-gap: 10px;
 }
 
 .navbar-brand {

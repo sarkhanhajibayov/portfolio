@@ -3,6 +3,7 @@ import { Component, ElementRef, HostListener, ViewChild } from '@angular/core';
 import { from } from 'rxjs';
 import { RouterOutlet } from '@angular/router';
 import * as AOS from 'aos';
+import { MatDrawer } from '@angular/material/sidenav';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -14,6 +15,8 @@ export class AppComponent {
   top: any;
   left: any;
   expand = false;
+  isMobile: boolean | undefined;
+  @ViewChild('drawer', {}) drawer: MatDrawer | undefined;
 
   constructor() {}
   @HostListener('document:click', ['$event'])
@@ -31,9 +34,14 @@ export class AppComponent {
     );
   }
   ngOnInit(): void {
+    this.isMobile = window.matchMedia('(max-width: 1200px)').matches;
     AOS.init();
   }
-  
+
+  onResize(event: any) {
+    this.isMobile = window.matchMedia('(max-width:1200px)').matches;
+
+  }
   @HostListener('document:mousemove', ['$event'])
   onMousemove(event: MouseEvent) {
     this.top = event.pageY - 10 + 'px';

@@ -1,9 +1,15 @@
-<div class="container-fluid w-100 p-0 container-body main">
-  <div class="row m-0">
+<mat-drawer-container
+  (window:resize)="onResize($event)"
+  class="example-container"
+  autosize
+>
+  <mat-drawer #drawer [opened]="!isMobile" mode="side" class="border-0">
     <app-sidenav></app-sidenav>
-    <app-header-mobile class="w-100"></app-header-mobile>
-    <div class="route">
-      <router-outlet #outlet="outlet"> </router-outlet>
+  </mat-drawer>
+  <mat-drawer-content class="">
+    <div class="main-content">
+      <app-header-mobile></app-header-mobile>
+      <router-outlet class="main"></router-outlet>
     </div>
-  </div>
-</div>
+  </mat-drawer-content>
+</mat-drawer-container>

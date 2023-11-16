@@ -1,4 +1,3 @@
-<div class="background">
   <aside class="example-container">
     <div class="sidebar">
       <div class="sidebar__header">
@@ -13,7 +12,11 @@
           data-aos-delay="400"
           class="px-3 py-1"
         >
-          <a routerLink="/">
+          <a
+            routerLink="/"
+            routerLinkActive="active"
+            [routerLinkActiveOptions]="{ exact: true }"
+          >
             <fa-icon class="mr-3" [icon]="faHouse"></fa-icon> <span>Home</span>
           </a>
         </li>
@@ -59,4 +62,3 @@
       </mat-list-item>
     </div>
   </aside>
-</div>
