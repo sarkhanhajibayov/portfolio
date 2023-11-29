@@ -1,66 +1,60 @@
 <div class="wrapper">
-<div class="container-fluid">
-  <div class="row m-0 p-4 justify-content-center">
-    <div
-      data-aos="fade-left"
-      data-aos-duration="1000"
-      data-aos-delay="300"
-      class="col-md-10 image text-center"
-    >
-      <img
-        style="width: 90%"
-        class="mb-4 img-responsive"
-        src="assets/images/about-image.jpeg"
-        alt=""
-      />
-    </div>
-    <div
-      *ngIf="about"
-      data-aos="fade-left"
-      data-aos-duration="1000"
-      data-aos-delay="400"
-      class="row about-content w-100"
-    >
-      <div class="col-md-5 col-12 about">
-        <h3 class="header">{{ about.fullName }}</h3>
-        <p class="text">{{ about.description }}</p>
-        <button type="button" (click)="onReadMore()" class="btn">
-          Read More
-        </button>
+  <div
+    data-aos="fade-left"
+    data-aos-duration="1000"
+    data-aos-delay="300"
+    class="container-fluid"
+  >
+    <div class="row m-0 p-4 justify-content-center">
+      <div class="col-md-10 image text-center">
+        <img
+          style="width: 90%"
+          class="mb-4 img-responsive"
+          src="assets/images/about-image.jpeg"
+          alt=""
+        />
       </div>
-      <div class="col-md-3 col-12 list">
-        <mat-list-item role="listitem">
-          <li class="px-3 py-1 list-style-none">
-            <span class="list-header">Birthday:</span>
-            <span class="list-text pl-3">{{ about.birthDate }}</span>
-          </li>
-        </mat-list-item>
-        <mat-list-item role="listitem">
-          <li class="px-3 py-1">
-            <span class="list-header">Age:</span>
-            <span class="list-text pl-3">{{ age }}</span>
-          </li>
-        </mat-list-item>
-        <mat-list-item role="listitem">
-          <li class="px-3 py-1">
-            <span class="list-header">Address:</span>
-            <span class="list-text pl-3">{{ about.address }}</span>
-          </li>
-        </mat-list-item>
-        <mat-list-item role="listitem">
-          <li class="px-3 py-1">
-            <span class="list-header">Email:</span>
-            <span class="list-text pl-3">{{ about.email }}</span>
-          </li>
-        </mat-list-item>
-        <mat-list-item role="listitem">
-          <li class="px-3 py-1">
-            <span class="list-header">Phone:</span>
-            <span class="list-text pl-3">{{ about.phone }}</span>
-          </li>
-        </mat-list-item>
+      <div *ngIf="about" class="row about-content w-100">
+        <div class="col-md-5 col-12 about">
+          <h3 class="header">{{ about.fullName }}</h3>
+          <p class="text">{{ about.description }}</p>
+          <button type="button" (click)="onReadMore()" class="btn">
+            Read More
+          </button>
+        </div>
+        <div class="col-md-3 col-12 list">
+          <mat-list-item role="listitem">
+            <li class="px-3 py-1 list-style-none">
+              <span class="list-header">Birthday:</span>
+              <span class="list-text pl-3">{{ about.birthDate }}</span>
+            </li>
+          </mat-list-item>
+          <mat-list-item role="listitem">
+            <li class="px-3 py-1">
+              <span class="list-header">Age:</span>
+              <span class="list-text pl-3">{{ age }}</span>
+            </li>
+          </mat-list-item>
+          <mat-list-item role="listitem">
+            <li class="px-3 py-1">
+              <span class="list-header">Address:</span>
+              <span class="list-text pl-3">{{ about.address }}</span>
+            </li>
+          </mat-list-item>
+          <mat-list-item role="listitem">
+            <li class="px-3 py-1">
+              <span class="list-header">Email:</span>
+              <span class="list-text pl-3">{{ about.email }}</span>
+            </li>
+          </mat-list-item>
+          <mat-list-item role="listitem">
+            <li class="px-3 py-1">
+              <span class="list-header">Phone:</span>
+              <span class="list-text pl-3">{{ about.phone }}</span>
+            </li>
+          </mat-list-item>
+        </div>
       </div>
     </div>
   </div>
-</div>
 </div>
