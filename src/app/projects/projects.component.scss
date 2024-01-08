@@ -24,6 +24,7 @@
 }
 
 .mat-mdc-card {
+  height: 500px;
   background-color: #1c1c1c;
   border: 0.0625rem solid rgba(255, 255, 255, 0.1);
   border-radius: 0.625rem;
@@ -37,11 +38,15 @@
 img {
   transition: all 300ms ease-in;
   width: 100%;
-  height: 100%;
+  height: 90%;
   object-fit: cover;
 }
 .mat-mdc-card:hover img {
   transform: scale(1.1);
+}
+
+.tech{
+  height: 90px;
 }
 .tech-row {
   column-gap: 0.625rem;
